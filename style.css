@@ -119,7 +119,6 @@ h3 { font-size: 22px; margin: 0 0 6px; }
 .principles li { counter-increment: p; display: grid; grid-template-columns: 44px 1fr; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--hairline); }
 .principles li::before { content: counter(p, decimal-leading-zero); font: 600 14px/1.9 var(--mono); color: var(--signal); }
 .principles strong { font: 700 20px/1.3 var(--serif); display: block; }
-.principles span { color: var(--muted); }
 
 .projects { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--rule); }
 .projects li { display: grid; grid-template-columns: 150px 1fr auto; gap: 8px 32px; align-items: baseline; padding: 24px 0; border-bottom: 1px solid var(--hairline); }
@@ -139,7 +138,7 @@ h3 { font-size: 22px; margin: 0 0 6px; }
 .join :focus-visible { outline-color: var(--paper); }
 .join ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .join li { padding-left: 26px; position: relative; }
-.join li::before { content: "→"; position: absolute; left: 0; color: var(--signal); font-family: var(--mono); }
+.join li::before { content: "→"; position: absolute; left: 0; color: var(--paper); font-family: var(--mono); }
 @media (min-width: 820px) { .join { grid-template-columns: 1fr 1.2fr; align-items: center; } }
 
 /* Tool page: screenshots */
