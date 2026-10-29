@@ -134,7 +134,7 @@ h3 { font-size: 22px; margin: 0 0 6px; }
 .join { background: var(--ink); color: var(--paper); padding: 40px; display: grid; gap: 20px 48px; }
 .join h2 { margin: 0 0 8px; font-size: clamp(32px, 5vw, 48px); }
 .join p { margin: 0; color: var(--paper); }
-.join a { color: var(--paper); }
+.join a { color: var(--paper); text-decoration-color: var(--paper); }
 .join a:hover { color: var(--paper); text-decoration-thickness: 3px; }
 .join :focus-visible { outline-color: var(--paper); }
 .join ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
