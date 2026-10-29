@@ -66,9 +66,16 @@ for (const path of pages) {
 
         test('keyboard focus is visible', async ({ page }) => {
             await page.goto(path);
-            await page.keyboard.press('Tab');
-            const outline = await page.evaluate(() => getComputedStyle(/** @type {Element} */ (document.activeElement)).outlineStyle);
-            expect(outline).toBe('solid');
+            // The skip link, then every link and button after it.
+            const count = await page.locator('a[href], button').count();
+            for (let i = 0; i < count; i++) {
+                await page.keyboard.press('Tab');
+                const focused = await page.evaluate(() => {
+                    const el = /** @type {Element} */ (document.activeElement);
+                    return { tag: el.outerHTML.slice(0, 80), outline: getComputedStyle(el).outlineStyle };
+                });
+                expect(focused.outline, focused.tag).toBe('solid');
+            }
         });
     });
 }

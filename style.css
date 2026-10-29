@@ -66,7 +66,7 @@ code { font: .88em var(--mono); background: var(--accent-soft); color: var(--acc
 .wrap { max-width: 1040px; margin-inline: auto; padding-inline: 20px; }
 
 /* Header and footer */
-.site-header { border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 85%, transparent); }
+.site-header { border-bottom: 1px solid var(--line); background: var(--bg); background: color-mix(in srgb, var(--bg) 85%, transparent); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; font-size: 18px; letter-spacing: -.01em; }
 .brand:hover { color: var(--text); }
