@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>protagone</title>
-    <meta name="description" content="Small, free and open-source tools for using the web on your own terms: no accounts, no tracking.">
+    <meta name="description" content="protagone builds and backs open tools that put people before platforms, together with the open-source community.">
     <meta name="referrer" content="no-referrer">
     <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#111016" media="(prefers-color-scheme: dark)">
@@ -16,30 +16,50 @@
 <header class="site-header">
     <div class="wrap">
         <a class="brand" href="./" aria-current="page"><img src="img/protagone.svg" alt="" width="30" height="30">protagone</a>
-        <nav aria-label="Main"><a href="#tools">Tools</a><a href="https://github.com/protagone" rel="noreferrer">GitHub</a></nav>
+        <nav aria-label="Main"><a href="#story">Story</a><a href="#projects">Projects</a><a href="#support">Support</a></nav>
     </div>
 </header>
 
 <main id="main">
     <div class="hero">
         <div class="wrap">
-            <span class="eyebrow">Free and open source</span>
-            <h1>Small tools for using the web on your own terms.</h1>
-            <p class="lead">No accounts, no tracking, no servers of my own, and the code is open for anyone to read.</p>
-            <ul class="pills" aria-label="Principles">
-                <li>No accounts</li>
-                <li>No tracking</li>
-                <li>Open source</li>
-            </ul>
+            <span class="eyebrow">Open source, for people</span>
+            <h1>The protagonist is gone.<br>The work goes on.</h1>
+            <p class="lead">protagone builds and backs open tools that put people before platforms. No face to follow and nothing to sell: only work that anyone can read, use and improve.</p>
+            <div class="buttons">
+                <a class="btn primary" href="#projects">See the projects</a>
+                <a class="btn" href="#story">Who is protagone?</a>
+            </div>
         </div>
     </div>
 
+    <section class="section wrap story" id="story" aria-labelledby="story-title">
+        <h2 id="story-title">Who is protagone?</h2>
+        <div class="story-text">
+            <p>Every story has a protagonist. This one stepped out of the frame.</p>
+            <p>protagone is a name, not a person. It stands with the people who are never in the spotlight: the ones who use the web without owning any of it, and who are told to log in, pay up or look away.</p>
+            <p>The platforms build walls. We make doors, small ones at first, in the open and together with the open-source community. Some of what we build uses AI, and it answers to the people who use it, not to whoever pays for their data.</p>
+            <p class="signature">The work is the face. That is enough.</p>
+        </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="principles-title">
+        <h2 id="principles-title">What we hold to</h2>
+        <div class="features principles">
+            <div class="card"><h3>People before platforms</h3><p>Every tool starts from what a person needs, not from what a company wants to measure.</p></div>
+            <div class="card"><h3>Open by default</h3><p>The code is public and free to use, change and share. Nothing hides behind a login.</p></div>
+            <div class="card"><h3>Nothing to track</h3><p>No accounts, no analytics, no ads. What you do stays in your own browser.</p></div>
+            <div class="card"><h3>Built together</h3><p>We help open-source projects, and they help us. Small groups, sharing what works.</p></div>
+        </div>
+    </section>
+
     <!-- A new tool: its own folder with an index.html, and one more <a class="card tool"> here. -->
-    <section class="section wrap" id="tools" aria-labelledby="tools-title">
-        <h2 id="tools-title">Tools</h2>
-        <p class="section-intro">Each tool runs in your own browser and has its own page with install steps and a privacy policy.</p>
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <p class="section-intro">Tools you can use today, and the larger work we support behind them.</p>
         <div class="tools">
             <a class="card tool" href="instagram-no-login/">
+                <span class="badge">Available</span>
                 <img src="instagram-no-login/img/icon-128.png" alt="" width="56" height="56">
                 <div>
                     <h3>Instagram No Login</h3>
@@ -50,9 +70,40 @@
                 </ul>
                 <span class="more">Get it</span>
             </a>
-            <div class="card tool soon">
-                <p>More tools are on the way.</p>
+            <div class="card tool project">
+                <span class="badge quiet">In the works</span>
+                <div>
+                    <h3>The Cooperative</h3>
+                    <p>A cooperative of small, independent teams that work with AI and keep their own data at home. What one team learns, the others can use, so the network grows stronger than its parts.</p>
+                </div>
+                <ul class="tags" aria-label="About">
+                    <li>Cooperative</li><li>AI</li><li>Your data stays yours</li>
+                </ul>
             </div>
+            <div class="card tool project">
+                <span class="badge quiet">In the works</span>
+                <div>
+                    <h3>AI Taskrunner</h3>
+                    <p>A local runner that plans, builds and tests approved tasks, and has the result reviewed separately. A person approves the scope and judges the outcome.</p>
+                </div>
+                <ul class="tags" aria-label="About">
+                    <li>Runs locally</li><li>Human approval</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section wrap" id="support" aria-labelledby="support-title">
+        <div class="card support">
+            <div>
+                <h2 id="support-title">Support the work</h2>
+                <p>protagone runs on time, not on ads. If the tools help you, there are three ways to help back.</p>
+            </div>
+            <ul class="support-list">
+                <li><strong>Use it and pass it on.</strong> Tell someone who needs a way around the wall.</li>
+                <li><strong>Build along.</strong> Report a bug, translate, or send a fix on <a href="https://github.com/protagone" rel="noreferrer">GitHub</a>.</li>
+                <li><strong>Donate.</strong> Buy Me a Coffee and GitHub Sponsors are coming soon.</li>
+            </ul>
         </div>
     </section>
 </main>
