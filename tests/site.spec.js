@@ -27,7 +27,7 @@ for (const path of pages) {
                 await page.emulateMedia({ colorScheme });
                 await page.goto(path);
                 const bg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
-                expect(bg).toBe(colorScheme === 'light' ? 'rgb(244, 241, 234)' : 'rgb(20, 19, 16)');
+                expect(bg).toBe(colorScheme === 'light' ? 'rgb(243, 243, 240)' : 'rgb(14, 14, 15)');
                 await expect(page.locator('h1')).toBeVisible();
             });
 
