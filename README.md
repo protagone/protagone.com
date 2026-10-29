@@ -19,8 +19,8 @@ cookies, analytics or external requests.
 1. Make a folder with the tool's name and an `index.html`, copying the header
    and footer of `instagram-no-login/index.html` (paths to `../style.css` and
    `../img/`).
-2. Add one `<li>` to `ul.projects` in `index.html`: a `status`, an `h3` with
-   the link, a line of text and a `more` link.
+2. Add one `<article class="pcard">` to the cards in `index.html`: an image,
+   a `status`, an `h3` with the link, one line of text and a `more` link.
 3. Add its pages to `pages` in `tests/site.spec.js` and run the tests.
 
 ## A new Instagram No Login release
