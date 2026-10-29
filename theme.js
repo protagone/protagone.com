@@ -15,6 +15,7 @@
         var btn = document.querySelector('.theme-toggle');
         if (!btn) return;
         label(btn);
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function () { label(btn); });
         btn.addEventListener('click', function () {
             var next = current() === 'dark' ? 'light' : 'dark';
             root.dataset.theme = next;
