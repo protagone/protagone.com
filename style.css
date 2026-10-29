@@ -135,6 +135,7 @@ h3 { font-size: 18px; margin: 0 0 6px; letter-spacing: -.01em; }
 .tool .more { margin-top: auto; font-weight: 650; color: var(--accent); }
 .tool .more::after { content: " →"; }
 .tool .badge { margin-bottom: 0; }
+#projects .tools { grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); }
 .tool.project:hover { border-color: var(--line); box-shadow: var(--shadow-sm); transform: none; }
 
 /* Home: story and support */
