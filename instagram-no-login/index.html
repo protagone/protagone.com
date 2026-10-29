@@ -3,38 +3,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Instagram No Login</title>
+    <title>Instagram No Login · protagone</title>
     <meta name="description" content="A free browser extension to view public Instagram profiles and posts without an account: no login pop-ups, and a search box on the home page.">
     <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111016" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="img/icon-32.png">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
     <div class="wrap">
-        <a class="brand" href="../"><img src="../img/protagone.svg" alt="">protagone</a>
-        <nav><a href="#install">Install</a><a href="privacy/">Privacy</a></nav>
+        <a class="brand" href="../"><img src="../img/protagone.svg" alt="" width="30" height="30">protagone</a>
+        <nav aria-label="Main"><a href="#features">Features</a><a href="#install">Install</a><a href="privacy/">Privacy</a></nav>
     </div>
 </header>
 
-<main>
-    <div class="hero wrap">
-        <img class="icon" src="img/icon-128.png" alt="" width="96" height="96">
-        <h1>Instagram, without the login wall</h1>
-        <p class="lead">A free browser extension to look at public profiles and posts on instagram.com without an account. No pop-ups, no sign-up, nothing to track you.</p>
-        <div class="buttons">
-            <a class="btn primary" href="#install">Install</a>
-            <a class="btn" href="download/instagram-no-login-chrome.zip" download>Download ZIP <small>v1.11.4</small></a>
+<main id="main">
+    <div class="hero center">
+        <div class="wrap">
+            <img class="icon" src="img/icon-128.png" alt="" width="88" height="88">
+            <h1>Instagram, without the login wall</h1>
+            <p class="lead">A free browser extension to look at public profiles and posts on instagram.com without an account. No pop-ups, no sign-up, nothing to track you.</p>
+            <div class="buttons">
+                <a class="btn primary" href="#install">Install</a>
+                <a class="btn" href="download/instagram-no-login-chrome.zip" download>Download ZIP <small>v1.11.4</small></a>
+            </div>
+            <p class="meta">For Chrome, Edge, Firefox and other Chromium browsers · Free and open source (GPL-3.0)</p>
         </div>
-        <p class="meta">For Chrome, Edge, Firefox and other Chromium browsers · Free and open source (GPL-3.0)</p>
     </div>
 
     <div class="wrap">
-        <div class="shot"><img src="img/1-search.png" alt="The search box on Instagram's home page, listing NASA accounts" width="1280" height="800"></div>
+        <div class="window"><img src="img/1-search.png" alt="The search box on Instagram's home page, listing NASA accounts" width="1280" height="800"></div>
     </div>
 
-    <section class="wrap">
-        <h2>What it does</h2>
+    <section class="section wrap" id="features" aria-labelledby="features-title">
+        <h2 id="features-title">What it does</h2>
+        <p class="section-intro">It changes how instagram.com behaves for visitors who are not logged in, and nothing else.</p>
         <div class="features">
             <div class="card"><h3>No login pop-up</h3><p>The "See photos, videos and more" pop-up is closed before it is drawn.</p></div>
             <div class="card"><h3>Posts and profiles open</h3><p>Clicking a post, reel or account opens it as a normal page instead of the login pop-up.</p></div>
@@ -45,60 +51,72 @@
         </div>
     </section>
 
-    <section class="wrap">
+    <section class="section wrap" aria-label="Screenshots">
         <div class="gallery">
             <figure><img src="img/2-profile.png" alt="NASA's Instagram profile, open without a login pop-up" width="1280" height="800" loading="lazy"><figcaption>A public profile, logged out, without the pop-up.</figcaption></figure>
             <figure><img src="img/3-popup.png" alt="The extension's settings: fallback site and language" width="1280" height="800" loading="lazy"><figcaption>Pick the fallback site and the language from the toolbar.</figcaption></figure>
         </div>
     </section>
 
-    <section class="wrap" id="install">
-        <h2>Install</h2>
-        <div class="buttons" style="justify-content:flex-start;margin:0 0 24px">
-            <span class="btn" aria-disabled="true">Chrome Web Store <small>coming soon</small></span>
-            <span class="btn" aria-disabled="true">Edge Add-ons <small>coming soon</small></span>
-            <span class="btn" aria-disabled="true">Firefox Add-ons <small>coming soon</small></span>
+    <section class="section wrap" id="install" aria-labelledby="install-title">
+        <h2 id="install-title">Install</h2>
+        <p class="section-intro">The store listings are on their way. Until then, pick your browser and install it by hand in a minute.</p>
+        <div class="install">
+            <article class="card recommended" id="install-chromium" aria-labelledby="chromium-title">
+                <header>
+                    <span class="badge">Chrome Web Store · coming soon</span>
+                    <h3 id="chromium-title">Chrome, Edge, Brave</h3>
+                    <p class="for">and other Chromium browsers</p>
+                </header>
+                <ol class="steps">
+                    <li>Download the ZIP below and unzip it.</li>
+                    <li>Open <code>chrome://extensions</code> (Edge: <code>edge://extensions</code>) and turn on <strong>Developer mode</strong>.</li>
+                    <li>Click <strong>Load unpacked</strong> and choose the unzipped folder.</li>
+                    <li>Open <a href="https://www.instagram.com" rel="noreferrer">instagram.com</a>. Pin the icon from the puzzle-piece menu to change the settings.</li>
+                </ol>
+                <a class="btn primary" href="download/instagram-no-login-chrome.zip" download>Download for Chromium <small>ZIP</small></a>
+            </article>
+            <article class="card" id="install-firefox" aria-labelledby="firefox-title">
+                <header>
+                    <span class="badge">Firefox Add-ons · coming soon</span>
+                    <h3 id="firefox-title">Firefox</h3>
+                    <p class="for">to try it before the listing is live</p>
+                </header>
+                <ol class="steps">
+                    <li>Download the Firefox ZIP below. Firefox only keeps add-ons signed by Mozilla, which comes with the listing.</li>
+                    <li>Open <code>about:debugging#/runtime/this-firefox</code>, click <strong>Load Temporary Add-on…</strong> and choose the ZIP. It stays until Firefox closes.</li>
+                    <li>On instagram.com, allow the add-on from the puzzle-piece menu if nothing changes.</li>
+                </ol>
+                <a class="btn" href="download/instagram-no-login-firefox.zip" download>Download for Firefox <small>ZIP</small></a>
+            </article>
+            <article class="card" id="install-userscript" aria-labelledby="userscript-title">
+                <header>
+                    <span class="badge quiet">No store needed</span>
+                    <h3 id="userscript-title">Safari and others</h3>
+                    <p class="for">as a userscript</p>
+                </header>
+                <ol class="steps">
+                    <li>Install <a href="https://apps.apple.com/app/userscripts/id1463298887" rel="noreferrer">Userscripts</a> (Safari) or <a href="https://violentmonkey.github.io" rel="noreferrer">Violentmonkey</a> / <a href="https://www.tampermonkey.net" rel="noreferrer">Tampermonkey</a>.</li>
+                    <li>Open the userscript below and confirm the install.</li>
+                    <li>When asked, allow it to reach search.brave.com, imgs.search.brave.com and html.duckduckgo.com: that is the account list in the search box.</li>
+                </ol>
+                <a class="btn" href="download/instagram-no-login.user.js">Open the userscript</a>
+            </article>
         </div>
-        <p>Until the store listings are live, install it by hand:</p>
-
-        <details open>
-            <summary>Chrome, Edge, Brave and other Chromium browsers</summary>
-            <ol>
-                <li><a href="download/instagram-no-login-chrome.zip" download>Download the ZIP</a> and unzip it.</li>
-                <li>Open <code>chrome://extensions</code> (Edge: <code>edge://extensions</code>) and turn on <strong>Developer mode</strong>.</li>
-                <li>Click <strong>Load unpacked</strong> and choose the unzipped folder.</li>
-                <li>Open <a href="https://www.instagram.com" rel="noreferrer">instagram.com</a>. Pin the icon from the puzzle-piece menu to change the settings.</li>
-            </ol>
-        </details>
-        <details>
-            <summary>Firefox</summary>
-            <ol>
-                <li>Firefox only keeps add-ons signed by Mozilla, which comes with the Firefox Add-ons listing.</li>
-                <li>To try it now: <a href="download/instagram-no-login-firefox.zip" download>download the Firefox ZIP</a>, open <code>about:debugging#/runtime/this-firefox</code>, click <strong>Load Temporary Add-on…</strong> and choose the ZIP. It stays until Firefox closes.</li>
-                <li>On instagram.com, allow the add-on from the puzzle-piece menu if nothing changes.</li>
-            </ol>
-        </details>
-        <details>
-            <summary>Userscript (Safari, or any browser with a userscript manager)</summary>
-            <ol>
-                <li>Install <a href="https://apps.apple.com/app/userscripts/id1463298887" rel="noreferrer">Userscripts</a> (Safari) or <a href="https://violentmonkey.github.io" rel="noreferrer">Violentmonkey</a> / <a href="https://www.tampermonkey.net" rel="noreferrer">Tampermonkey</a>.</li>
-                <li>Open <a href="download/instagram-no-login.user.js">instagram-no-login.user.js</a> and confirm the install.</li>
-                <li>When asked, allow it to reach search.brave.com, imgs.search.brave.com and html.duckduckgo.com: that is the account list in the search box.</li>
-            </ol>
-        </details>
         <p class="note">Use the extension or the userscript, not both. Only public accounts work: private accounts stay private. When you are logged in to Instagram, it stays out of the way.</p>
     </section>
 
-    <section class="wrap">
-        <h2>Privacy</h2>
-        <p>It collects nothing and has no server. The only thing that leaves your browser is what you type in its search box, sent to Brave Search (or DuckDuckGo) without cookies to find the accounts. <a href="privacy/">Read the privacy policy</a>.</p>
+    <section class="section wrap" id="privacy" aria-labelledby="privacy-title">
+        <h2 id="privacy-title">Privacy</h2>
+        <p class="section-intro">It collects nothing and has no server. The only thing that leaves your browser is what you type in its search box, sent to Brave Search (or DuckDuckGo) without cookies to find the accounts. <a href="privacy/">Read the privacy policy</a>.</p>
     </section>
 </main>
 
-<footer>
+<footer class="site-footer">
     <div class="wrap">
-        Instagram No Login by <a href="../">protagone</a> · free software under the GPL-3.0 · based on "Bypass Instagram Login Redirects" by ZX_02<br>
-        Not affiliated with Instagram or Meta. Instagram is a trademark of Meta Platforms, Inc.
+        <p>Instagram No Login by <a href="../">protagone</a> · free software under the GPL-3.0 · based on "Bypass Instagram Login Redirects" by ZX_02<br>
+        Not affiliated with Instagram or Meta. Instagram is a trademark of Meta Platforms, Inc.</p>
+        <nav class="links" aria-label="Footer"><a href="privacy/">Privacy policy</a><a href="https://github.com/protagone" rel="noreferrer">GitHub</a></nav>
     </div>
 </footer>
 </body>

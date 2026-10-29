@@ -7,17 +7,20 @@
     <meta name="description" content="Privacy policy of the Instagram No Login extension and userscript: it collects nothing and has no server.">
     <meta name="referrer" content="no-referrer">
     <link rel="icon" href="../img/icon-32.png">
+    <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111016" media="(prefers-color-scheme: dark)">
     <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
     <div class="wrap">
-        <a class="brand" href="../../"><img src="../../img/protagone.svg" alt="">protagone</a>
-        <nav><a href="../">Instagram No Login</a><a href="./">Privacy</a></nav>
+        <a class="brand" href="../../"><img src="../../img/protagone.svg" alt="" width="30" height="30">protagone</a>
+        <nav aria-label="Main"><a href="../">Instagram No Login</a><a href="./" aria-current="page">Privacy</a></nav>
     </div>
 </header>
 
-<main class="wrap prose">
+<main id="main" class="section wrap prose">
     <h1>Privacy policy</h1>
     <p class="meta">Instagram No Login, the browser extension and the userscript. Last updated 28 October 2026.</p>
     <p class="note"><strong>In short:</strong> it collects nothing, has no server, and sends only what you type in its search box to a search engine.</p>
@@ -52,8 +55,11 @@
     <p>Changes to this policy are published on this page, with a new date at the top.</p>
 </main>
 
-<footer>
-    <div class="wrap">Not affiliated with Instagram or Meta. Instagram is a trademark of Meta Platforms, Inc.</div>
+<footer class="site-footer">
+    <div class="wrap">
+        <p>Not affiliated with Instagram or Meta. Instagram is a trademark of Meta Platforms, Inc.</p>
+        <nav class="links" aria-label="Footer"><a href="../">Instagram No Login</a><a href="../../">protagone</a></nav>
+    </div>
 </footer>
 </body>
 </html>

@@ -6,40 +6,62 @@
     <title>protagone</title>
     <meta name="description" content="Small, free and open-source tools for using the web on your own terms: no accounts, no tracking.">
     <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#fbfaff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111016" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="img/protagone.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
     <div class="wrap">
-        <a class="brand" href="./"><img src="img/protagone.svg" alt="">protagone</a>
-        <nav><a href="#tools">Tools</a></nav>
+        <a class="brand" href="./" aria-current="page"><img src="img/protagone.svg" alt="" width="30" height="30">protagone</a>
+        <nav aria-label="Main"><a href="#tools">Tools</a><a href="https://github.com/protagone" rel="noreferrer">GitHub</a></nav>
     </div>
 </header>
 
-<main>
-    <div class="hero wrap">
-        <h1>protagone</h1>
-        <p class="lead">Small, free tools for using the web on your own terms. No accounts, no tracking, no servers of my own, and the code is open for anyone to read.</p>
+<main id="main">
+    <div class="hero">
+        <div class="wrap">
+            <span class="eyebrow">Free and open source</span>
+            <h1>Small tools for using the web on your own terms.</h1>
+            <p class="lead">No accounts, no tracking, no servers of my own, and the code is open for anyone to read.</p>
+            <ul class="pills" aria-label="Principles">
+                <li>No accounts</li>
+                <li>No tracking</li>
+                <li>Open source</li>
+            </ul>
+        </div>
     </div>
 
     <!-- A new tool: its own folder with an index.html, and one more <a class="card tool"> here. -->
-    <section class="wrap" id="tools">
-        <h2>Tools</h2>
+    <section class="section wrap" id="tools" aria-labelledby="tools-title">
+        <h2 id="tools-title">Tools</h2>
+        <p class="section-intro">Each tool runs in your own browser and has its own page with install steps and a privacy policy.</p>
         <div class="tools">
             <a class="card tool" href="instagram-no-login/">
                 <img src="instagram-no-login/img/icon-128.png" alt="" width="56" height="56">
                 <div>
                     <h3>Instagram No Login</h3>
-                    <p>Look at public Instagram profiles and posts without an account: no login pop-ups, and a search box on the home page. For Chrome, Edge and Firefox.</p>
+                    <p>Look at public Instagram profiles and posts without an account: no login pop-ups, and a search box on the home page.</p>
                 </div>
+                <ul class="tags" aria-label="Works in">
+                    <li>Chrome</li><li>Edge</li><li>Firefox</li><li>Userscript</li>
+                </ul>
+                <span class="more">Get it</span>
             </a>
+            <div class="card tool soon">
+                <p>More tools are on the way.</p>
+            </div>
         </div>
     </section>
 </main>
 
-<footer>
-    <div class="wrap">protagone · <a href="https://github.com/protagone" rel="noreferrer">GitHub</a></div>
+<footer class="site-footer">
+    <div class="wrap">
+        <p>protagone · free software, made in the open</p>
+        <nav class="links" aria-label="Footer"><a href="instagram-no-login/">Instagram No Login</a><a href="https://github.com/protagone" rel="noreferrer">GitHub</a></nav>
+    </div>
 </footer>
 </body>
 </html>
