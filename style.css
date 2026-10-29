@@ -199,4 +199,5 @@ h3 { font-size: 18px; margin: 0 0 6px; letter-spacing: -.01em; }
     .section { padding-block: 40px; }
     .buttons .btn { width: 100%; }
     .site-header nav a { padding: 8px 8px; }
+    .support { padding: 24px; }
 }
