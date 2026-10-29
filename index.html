@@ -9,21 +9,22 @@
     <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0e0e0f" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="img/protagone.svg" type="image/svg+xml">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
     <div class="wrap">
-        <a class="brand" href="./" aria-current="page"><img src="img/protagone.svg" alt="" width="26" height="26">protagone</a>
-        <nav aria-label="Main"><a href="#story">About</a><a href="#projects">Projects</a><a href="#support">Join in</a></nav>
+        <a class="brand" href="./" aria-current="page"><svg viewBox="0 0 64 64" aria-hidden="true"><rect class="mark-b" width="64" height="64"/><path class="mark-p" d="M22 50V16h12a10 10 0 0 1 0 20h-12" fill="none" stroke-width="7" stroke-linecap="square"/><rect class="mark-s" x="44" y="44" width="10" height="10"/></svg>protagone</a>
+        <div class="header-end"><nav aria-label="Main"><a href="#story">About</a><a href="#projects">Projects</a><a href="#support">Join in</a></nav><button class="theme-toggle" type="button" aria-label="Switch theme"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 2a8 8 0 0 1 0 16z" fill="currentColor"/></svg></button></div>
     </div>
 </header>
 
 <main id="main">
     <div class="hero">
         <div class="wrap">
-            <p class="eyebrow">Pro·tag·one: the protagonist who is gone</p>
+            <p class="eyebrow">Prota·gone: the protagonist who is gone</p>
             <h1>The protagonist is gone. You're up.</h1>
             <p class="lead">We build ethical AI and open-source tools to fight injustice.</p>
             <div class="buttons">
@@ -37,7 +38,6 @@
         <p class="label"><b>01</b> · About</p>
         <h2 id="story-title">Who is protagone?</h2>
         <div class="story-text">
-            <p>A name without a face. The work matters more than who does it.</p>
             <p>Television tells you a vision. The feeds sell you to advertisers. Keep scrolling, keep paying, keep quiet.</p>
             <p>We want the opposite: people who think for themselves, and the tools to do it.</p>
             <p>So we build AI that makes people more capable.</p>
@@ -47,20 +47,9 @@
         </div>
     </section>
 
-    <section class="section wrap" aria-labelledby="principles-title">
-        <p class="label"><b>02</b> · Principles</p>
-        <h2 id="principles-title">What we stand for</h2>
-        <ul class="principles">
-            <li><strong>People first</strong></li>
-            <li><strong>Ethical AI</strong></li>
-            <li><strong>Open source</strong></li>
-            <li><strong>No tracking</strong></li>
-        </ul>
-    </section>
-
     <!-- A new tool: its own folder with an index.html, and one more <article class="pcard"> below. -->
     <section class="section wrap" id="projects" aria-labelledby="projects-title">
-        <p class="label"><b>03</b> · Projects</p>
+        <p class="label"><b>02</b> · Projects</p>
         <h2 id="projects-title">What we build</h2>
         <div class="cards">
             <article class="pcard">

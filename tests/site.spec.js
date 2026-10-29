@@ -95,3 +95,17 @@ test('download links exist and are not empty', async ({ page, request }) => {
         expect((await res.body()).length, href).toBeGreaterThan(1000);
     }
 });
+
+test('the theme toggle switches, and remembers the choice', async ({ page }) => {
+    await page.emulateMedia({ colorScheme: 'light' });
+    await page.goto('/');
+    const bg = () => page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+    expect(await bg()).toBe('rgb(243, 243, 240)');
+    const toggle = page.getByRole('button', { name: 'Switch to dark theme' });
+    await toggle.click();
+    expect(await bg()).toBe('rgb(14, 14, 15)');
+    await page.goto('/instagram-no-login/');
+    expect(await bg()).toBe('rgb(14, 14, 15)');
+    await page.getByRole('button', { name: 'Switch to light theme' }).click();
+    expect(await bg()).toBe('rgb(243, 243, 240)');
+});
