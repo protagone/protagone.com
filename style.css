@@ -57,7 +57,7 @@ code { font: .86em var(--mono); background: var(--paper-2); padding: .1em .35em;
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font: 700 22px/1 var(--serif); letter-spacing: -.01em; }
 .brand:hover { color: var(--ink); }
 .brand img { width: 26px; height: 26px; }
-.site-header nav { display: flex; gap: 18px; }
+.site-header nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 0 18px; }
 .site-header nav a { color: var(--ink); text-decoration: none; font: 500 13px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; padding: 8px 0; border-bottom: 2px solid transparent; white-space: nowrap; }
 .site-header nav a:hover { color: var(--ink); border-bottom-color: var(--signal); }
 .site-header nav a[aria-current="page"] { border-bottom-color: var(--ink); }
@@ -178,6 +178,6 @@ h3 { font-size: 22px; margin: 0 0 6px; }
     .hero { padding-block: 48px 32px; }
     .section { padding-block: 40px; }
     .buttons .btn { width: 100%; }
-    .site-header nav { gap: 12px; }
+    .site-header nav { gap: 0 12px; }
     .join { padding: 24px; }
 }
